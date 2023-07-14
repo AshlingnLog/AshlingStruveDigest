@@ -1,3 +1,7 @@
+
+Introducing AshlingStruve Digest, the revolutionary web app that tackles the age-old question, "What would you like to eat?" Prepare to bid farewell to relationship-shaking dilemmas and embrace the ultimate solution for all your culinary needs.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
