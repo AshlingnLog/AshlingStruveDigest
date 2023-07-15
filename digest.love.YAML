@@ -1,0 +1,36 @@
+# A .YAML file is used to export DNS records to a
+# domain managed by Google Cloud. The format is
+# exclusive to Google Cloud DNS.
+
+---
+kind: dns#resourceRecordSet
+name: 'digest.love.'
+rrdatas:
+- '1 aspmx.l.google.com.'
+- '5 alt1.aspmx.l.google.com.'
+- '5 alt2.aspmx.l.google.com.'
+- '10 alt3.aspmx.l.google.com.'
+- '10 alt4.aspmx.l.google.com.'
+ttl: 3600
+type: MX
+---
+kind: dns#resourceRecordSet
+name: 'digest.love.'
+rrdatas:
+- '"v=spf1 include:_spf.google.com ~all"'
+ttl: 3600
+type: SPF
+---
+kind: dns#resourceRecordSet
+name: 'digest.love.'
+rrdatas:
+- '"v=spf1 include:_spf.google.com ~all"'
+ttl: 3600
+type: TXT
+---
+kind: dns#resourceRecordSet
+name: 'google._domainkey.digest.love.'
+rrdatas:
+- '"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhabZU7g5YuXvH6kAKIT8ISAeLc6SwJJf+ZU31VFvxZ136/bHtRA6aSZSifAOKmevRBw/6id8OWq7+BrbsW6SwmeL1BzL+Cxd9r786v+01j2K9lJ4JIk+a9bQ06BEkeUoOdFcGgZGAWqNkh2EqpCP4YuH480z4AY5JSJ4J1yiGszOgN44mJIro4CwIz64c7btf" "OOQyyg/eqZJMfNbqyLjN35H2xEAQR6q9G/ftJHArbIeNx/YnJfThQ0vbrXhkpAqJ148kp+4pbGU0Jaq8bAgxrn+gPX+julFdOtGdfS/BeCy+CvSxK7tVI3sZ5cxT5lm3m2CUMjOuXLFvMme4zeeewIDAQAB"'
+ttl: 3600
+type: TXT
